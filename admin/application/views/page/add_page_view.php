@@ -55,7 +55,6 @@
 									    <div class="" style="display:grid; grid-template-columns:3fr 2fr; gap:20px;">
     										
     										<input class="input_style lng en" type="text" name="page_name_en" placeholder="Sayfa Adı*" required  />
-    										<input class="input_style" type="number" step="0.01" name="page_price" placeholder="Sayfa Fiyatı*" required  />
     										
     									</div>
     									<div class="">

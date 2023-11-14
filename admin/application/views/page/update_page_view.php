@@ -53,7 +53,6 @@
 									    <div class="" style="display:grid; grid-template-columns:3fr 2fr; gap:20px;">
     										
     										<input class="input_style lng en" type="text" name="page_name_en" placeholder="Food name* (EN)" required   value="<?php echo $page['page_name_en'];?>"/>
-    										<input class="input_style" type="number" step="0.01" name="page_price" placeholder="Food price* (€)" required  value="<?php echo $page['page_price'];?>" />
     									</div>
     									<div class="">
     										<textarea class="input_style lng en" name="page_description_en" placeholder="Food description* (EN)" required><?php echo $page['page_description_en'];?></textarea>
