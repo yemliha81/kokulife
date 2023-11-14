@@ -57,7 +57,7 @@
             <div class="welcome-div">
                 <form action="<?php echo LOGIN_POST;?>" method="post">
                     <div>
-                        <img src="<?php echo FATHER_BASE;?>template/img/kokulife-logo.jpg" width="240px"/>
+                        <img src="<?php echo FATHER_BASE;?>template/img/koku-life-pdf.svg" width="240px"/>
                     </div>
                     <div class="welcome-msg">
                         <div>
