@@ -36,8 +36,8 @@
                     </div>
                 </div>
                 <div class="col-lg-7 col-sm-8 col-md-6 col-xs-5 col-ts-12" style="text-align:center;">
-                    <a href="<?php echo FATHER_BASE;?>">
-                        <img src="<?php echo FATHER_BASE;?>assets/cam-demo-images/koku-life-pdf.svg" alt="img" width="280">
+                    <a href="<?php echo $_ENV['BASE_URL'];?>">
+                        <img src="<?php echo $_ENV['BASE_URL'];?>assets/cam-demo-images/koku-life-pdf.svg" alt="img" width="280">
                     </a>
                 </div>
                 <div class="col-lg-2 col-sm-12 col-md-3 col-xs-12 col-ts-12">
@@ -76,13 +76,13 @@
                     <div class="container-wapper" style="display: flex;align-items: center;justify-content: flex-end;">
                         <ul class="stelina-clone-mobile-menu stelina-nav main-menu " id="menu-main-menu">
                             <li class="menu-item">
-                                <a href="<?php echo FATHER_BASE;?>" class="stelina-menu-item-title" title="Home">Anasayfa</a>
+                                <a href="<?php echo $_ENV['BASE_URL'];?>" class="stelina-menu-item-title" title="Home">Anasayfa</a>
                             </li>
                             <li class="menu-item">
                                 <a href="<?php echo PRODUCT_LIST;?>" class="stelina-menu-item-title" title="Shop">Ürünler</a>
                             </li>
                             <li class="menu-item">
-                                <a href="<?php echo FATHER_BASE;?>" class="stelina-menu-item-title" title="About">Hakkımızda</a>
+                                <a href="<?php echo $_ENV['BASE_URL'];?>" class="stelina-menu-item-title" title="About">Hakkımızda</a>
                             </li>
                             <li class="menu-item">
                                 <a href="#" class="stelina-menu-item-title" title="About">İLETİŞİM</a>
@@ -98,8 +98,8 @@
     <div class="wapper">
         <div class="item mobile-logo">
             <div class="logo">
-                <a href="<?php echo FATHER_BASE;?>">
-                    <img src="<?php echo FATHER_BASE;?>assets/cam-demo-images/koku-life-pdf.svg" alt="img" width="240">
+                <a href="<?php echo $_ENV['BASE_URL'];?>">
+                    <img src="<?php echo $_ENV['BASE_URL'];?>assets/cam-demo-images/koku-life-pdf.svg" alt="img" width="240">
                 </a>
             </div>
         </div>
