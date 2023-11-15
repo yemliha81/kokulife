@@ -135,25 +135,25 @@
 <a href="#" class="backtotop">
     <i class="fa fa-angle-double-up"></i>
 </a>
-<script src="<?php echo FATHER_BASE;?>assets/js/jquery-1.12.4.min.js"></script>
-<script src="<?php echo FATHER_BASE;?>assets/js/jquery.plugin-countdown.min.js"></script>
-<script src="<?php echo FATHER_BASE;?>assets/js/jquery-countdown.min.js"></script>
-<script src="<?php echo FATHER_BASE;?>assets/js/bootstrap.min.js"></script>
-<script src="<?php echo FATHER_BASE;?>assets/js/owl.carousel.min.js"></script>
-<script src="<?php echo FATHER_BASE;?>assets/js/magnific-popup.min.js"></script>
-<script src="<?php echo FATHER_BASE;?>assets/js/isotope.min.js"></script>
-<script src="<?php echo FATHER_BASE;?>assets/js/jquery.scrollbar.min.js"></script>
-<script src="<?php echo FATHER_BASE;?>assets/js/jquery-ui.min.js"></script>
-<script src="<?php echo FATHER_BASE;?>assets/js/mobile-menu.js"></script>
-<script src="<?php echo FATHER_BASE;?>assets/js/chosen.min.js"></script>
-<script src="<?php echo FATHER_BASE;?>assets/js/slick.js"></script>
-<script src="<?php echo FATHER_BASE;?>assets/js/jquery.elevateZoom.min.js"></script>
-<script src="<?php echo FATHER_BASE;?>assets/js/jquery.actual.min.js"></script>
-<script src="<?php echo FATHER_BASE;?>assets/js/fancybox/source/jquery.fancybox.js"></script>
-<script src="<?php echo FATHER_BASE;?>assets/js/lightbox.min.js"></script>
-<script src="<?php echo FATHER_BASE;?>assets/js/owl.thumbs.min.js"></script>
-<script src="<?php echo FATHER_BASE;?>assets/js/jquery.scrollbar.min.js"></script>
-<script src="<?php echo FATHER_BASE;?>assets/js/frontend-plugin.js"></script>
+<script src="<?php echo $_ENV['BASE_URL'];?>assets/js/jquery-1.12.4.min.js"></script>
+<script src="<?php echo $_ENV['BASE_URL'];?>assets/js/jquery.plugin-countdown.min.js"></script>
+<script src="<?php echo $_ENV['BASE_URL'];?>assets/js/jquery-countdown.min.js"></script>
+<script src="<?php echo $_ENV['BASE_URL'];?>assets/js/bootstrap.min.js"></script>
+<script src="<?php echo $_ENV['BASE_URL'];?>assets/js/owl.carousel.min.js"></script>
+<script src="<?php echo $_ENV['BASE_URL'];?>assets/js/magnific-popup.min.js"></script>
+<script src="<?php echo $_ENV['BASE_URL'];?>assets/js/isotope.min.js"></script>
+<script src="<?php echo $_ENV['BASE_URL'];?>assets/js/jquery.scrollbar.min.js"></script>
+<script src="<?php echo $_ENV['BASE_URL'];?>assets/js/jquery-ui.min.js"></script>
+<script src="<?php echo $_ENV['BASE_URL'];?>assets/js/mobile-menu.js"></script>
+<script src="<?php echo $_ENV['BASE_URL'];?>assets/js/chosen.min.js"></script>
+<script src="<?php echo $_ENV['BASE_URL'];?>assets/js/slick.js"></script>
+<script src="<?php echo $_ENV['BASE_URL'];?>assets/js/jquery.elevateZoom.min.js"></script>
+<script src="<?php echo $_ENV['BASE_URL'];?>assets/js/jquery.actual.min.js"></script>
+<script src="<?php echo $_ENV['BASE_URL'];?>assets/js/fancybox/source/jquery.fancybox.js"></script>
+<script src="<?php echo $_ENV['BASE_URL'];?>assets/js/lightbox.min.js"></script>
+<script src="<?php echo $_ENV['BASE_URL'];?>assets/js/owl.thumbs.min.js"></script>
+<script src="<?php echo $_ENV['BASE_URL'];?>assets/js/jquery.scrollbar.min.js"></script>
+<script src="<?php echo $_ENV['BASE_URL'];?>assets/js/frontend-plugin.js"></script>
 </body>
 
 </html>
