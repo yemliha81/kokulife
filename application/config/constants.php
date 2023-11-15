@@ -119,9 +119,10 @@ define( 'SIGNUP_POST', $_ENV['BASE_URL'].'user/signup_post/');
 define( 'UPDATE_ACCOUNT_POST', $_ENV['BASE_URL'].'user/update_account_post/');
 define( 'ORDER_DETAILS', $_ENV['BASE_URL'].'user/order_details/');
 
-define( 'PAGE_DETAIL', $_ENV['BASE_URL'].'page/index/');
+//define( 'PAGE_DETAIL', $_ENV['BASE_URL'].'page/index/');
 define( 'CONTACT_PAGE', $_ENV['BASE_URL'].'page/contact/');
 define( 'SUPPORT_PAGE', $_ENV['BASE_URL'].'page/support/');
 
 
 define( 'PRODUCT_LIST', $_ENV['BASE_URL'].'product/product_list/');
+define( 'PAGE_DETAIL', $_ENV['BASE_URL'].'kurumsal/');

@@ -54,6 +54,7 @@ $route['404_override'] = 'page/not_found';
 $route['translate_uri_dashes'] = FALSE;
 
 $route['kategori/(:any)'] = 'category/products/$1';
+$route['kurumsal/(:any)'] = 'page/index/$1';
 
 
 

@@ -68,10 +68,10 @@
                                 <a href="<?php echo PRODUCT_LIST;?>" class="stelina-menu-item-title" title="Shop">Ürünler</a>
                             </li>
                             <li class="menu-item">
-                                <a href="<?php echo $_ENV['BASE_URL'];?>" class="stelina-menu-item-title" title="About">Hakkımızda</a>
+                                <a href="<?php echo PAGE_DETAIL.'hakkimizda';?>" class="stelina-menu-item-title" title="About">Hakkımızda</a>
                             </li>
                             <li class="menu-item">
-                                <a href="#" class="stelina-menu-item-title" title="About">İLETİŞİM</a>
+                                <a href="<?php echo PAGE_DETAIL.'iletisim';?>" class="stelina-menu-item-title" title="About">İLETİŞİM</a>
                             </li>
                         </ul>
                     </div>
