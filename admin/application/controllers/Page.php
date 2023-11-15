@@ -120,6 +120,7 @@ class Page extends CI_Controller {
 	
 	public function update_page_post()
 	{
+        //FOR TESTING
 	    require DOC_ROOT . 'simpleImage/SimpleImage.php';
 		$post = $this->input->post();
 		//debug($_FILES);
