@@ -55,6 +55,7 @@ $route['translate_uri_dashes'] = FALSE;
 
 $route['kategori/(:any)'] = 'category/products/$1';
 $route['kurumsal/(:any)'] = 'page/index/$1';
+$route['urun-detay/(:any)'] = 'product/detail/$1';
 
 
 

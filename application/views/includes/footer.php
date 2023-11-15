@@ -2,21 +2,7 @@
     <div class="container">
         <div class="container-wapper">
             <div class="row">
-                <div class="box-footer col-xs-12 col-sm-4 col-md-4 col-lg-4 hidden-sm hidden-md hidden-lg">
-                    <div class="stelina-newsletter style1">
-                        <div class="newsletter-head">
-                            <h3 class="title">Newsletter</h3>
-                        </div>
-                        <div class="newsletter-form-wrap">
-                            <div class="list">
-                                Sign up for our free video course and <br/> urban garden inspiration
-                            </div>
-                            <input type="email" class="input-text email email-newsletter"
-                                   placeholder="Your email letter">
-                            <button class="button btn-submit submit-newsletter">SUBSCRIBE</button>
-                        </div>
-                    </div>
-                </div>
+                
                 <div class="box-footer col-xs-12 col-sm-4 col-md-4 col-lg-4">
                     <div class="stelina-custommenu default">
                         <h2 class="widgettitle">hızlı menü</h2>

@@ -21,7 +21,7 @@
                                         </div>
                                         <div class="product-thumb">
                                             <div class="thumb-inner">
-                                                <a href="#">
+                                                <a href="<?php echo $_ENV['BASE_URL'].'urun-detay/'.$product['id'];?>">
                                                     <img src="<?php echo $_ENV['BASE_URL'];?>admin/files/product/img/400/<?php echo $product['product_image'];?>" alt="img">
                                                 </a>
                                                 <div class="thumb-group">
@@ -30,14 +30,14 @@
                                                             <a href="#">Add to Wishlist</a>
                                                         </div>
                                                     </div>
-                                                    <a href="#" class="button quick-wiew-button">İncele</a>
+                                                    <a href="<?php echo $_ENV['BASE_URL'].'urun-detay/'.$product['id'];?>" class="button quick-wiew-button">İncele</a>
                                                     
                                                 </div>
                                             </div>
                                         </div>
                                         <div class="product-info">
                                             <h5 class="product-name product_title">
-                                                <a href="#"><?php echo $product['product_name_en'];?></a>
+                                                <a href="<?php echo $_ENV['BASE_URL'].'urun-detay/'.$product['id'];?>"><?php echo $product['product_name_en'];?></a>
                                             </h5>
                                             <div class="group-info">
                                                 <div class="stars-rating">
