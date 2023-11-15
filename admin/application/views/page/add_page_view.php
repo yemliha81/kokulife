@@ -29,8 +29,6 @@
 
     <div class="page-content">
         
-        <a href="<?php echo PAGE_LIST.$c_id;?>" class="select-lang"><span class="lnr lnr-chevron-left"></span> Back to Food list</a>
-        
         <div class="main-content m-t-20">
             <div class="">
 							
@@ -58,7 +56,7 @@
     										
     									</div>
     									<div class="">
-    										<textarea class="input_style lng en" name="page_description_en" placeholder="Sayfa Açıklaması*" required></textarea>
+    										<textarea class="summernote input_style lng en" name="page_description_en" placeholder="Sayfa Açıklaması*" required></textarea>
     									</div>
     									
 									</div>
@@ -82,6 +80,7 @@
 		$('.dropify').dropify();
 		$('.file-icon').addClass('lnr lnr-upload');
 		$('.file-icon').removeClass('file-icon');
+        $('.summernote').summernote();
 	});
 	$(".select-lang").click(function(){
         var lang = $(this).attr('lang')

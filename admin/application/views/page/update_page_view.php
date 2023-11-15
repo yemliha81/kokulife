@@ -39,7 +39,7 @@
     							</div>
     							
     						</div>
-							<form action="<?php echo UPDATE_PRODUCT_POST;?>" method="post" enctype="multipart/form-data">
+							<form action="<?php echo UPDATE_PAGE_POST;?>" method="post" enctype="multipart/form-data">
 								<div class="m-b-20 menu-form">
 									<div>
 									    
@@ -55,7 +55,7 @@
     										<input class="input_style lng en" type="text" name="page_name_en" placeholder="Food name* (EN)" required   value="<?php echo $page['page_name_en'];?>"/>
     									</div>
     									<div class="">
-    										<textarea class="input_style lng en" name="page_description_en" placeholder="Food description* (EN)" required><?php echo $page['page_description_en'];?></textarea>
+    										<textarea class="summernote input_style lng en" name="page_description_en" placeholder="Food description* (EN)" required><?php echo $page['page_description_en'];?></textarea>
     									</div>
     									
 									</div>
@@ -80,17 +80,9 @@
 		$('.dropify').dropify();
 		$('.file-icon').addClass('lnr lnr-upload');
 		$('.file-icon').removeClass('file-icon');
-		
-		$(".food-icon").each(function(){
-            if($(this).hasClass('act')){
-                var src2 = $(this).attr('src2');
-                $(this).find('img').attr('src', src2);
-            }else{
-                var src1 = $(this).attr('src1');
-                $(this).find('img').attr('src', src1);
-            }
-        })
-		
+        $('.summernote').summernote({
+            height: 400
+        });
 		
 	});
 </script>
