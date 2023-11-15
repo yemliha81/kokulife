@@ -8,13 +8,13 @@
                         <h2 class="widgettitle">hızlı menü</h2>
                         <ul class="menu">
                             <li class="menu-item">
-                                <a href="#">Yeni Ürünler</a>
+                                <a href="<?php echo PRODUCT_LIST;?>">Yeni Ürünler</a>
                             </li>
                             <li class="menu-item">
-                                <a href="#">En çok satanlar</a>
+                                <a href="<?php echo PRODUCT_LIST;?>">En çok satanlar</a>
                             </li>
                             <li class="menu-item">
-                                <a href="#">İndirimdekiler</a>
+                                <a href="<?php echo PRODUCT_LIST;?>">İndirimdekiler</a>
                             </li>
                         </ul>
                     </div>
@@ -37,10 +37,10 @@
                         <h2 class="widgettitle">KURUMSAL</h2>
                         <ul class="menu">
                             <li class="menu-item">
-                                <a href="#">Hakkımızda</a>
+                                <a href="<?php echo PAGE_DETAIL.'hakkimizda';?>">Hakkımızda</a>
                             </li>
                             <li class="menu-item">
-                                <a href="#">İletişim</a>
+                                <a href="<?php echo PAGE_DETAIL.'iletisim';?>">İletişim</a>
                             </li>
                         </ul>
                     </div>
