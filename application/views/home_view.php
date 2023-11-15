@@ -3,10 +3,10 @@
     <div class="fullwidth-template">
         <div class="home-slider-banner home-banner">
             <div>
-                <img src="<?php echo $_ENV['BASE_URL'];?>assets/cam-demo-images/banner-1.jpg" width="100%" />
+                <img src="<?php echo $_ENV['BASE_URL'];?>assets/cam-demo-images/sewox-banner-1.jpg" width="100%" />
             </div>
             <div>
-                <img src="<?php echo $_ENV['BASE_URL'];?>assets/cam-demo-images/banner-2.jpg" width="100%" />
+                <img src="<?php echo $_ENV['BASE_URL'];?>assets/cam-demo-images/sewox-banner-2.jpg" width="100%" />
             </div>
             <!--<div class="container">
                 <div class="row10">

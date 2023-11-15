@@ -124,8 +124,4 @@ define( 'CONTACT_PAGE', FATHER_BASE.'page/contact/');
 define( 'SUPPORT_PAGE', FATHER_BASE.'page/support/');
 
 
-
-
-
-
-
+define( 'PRODUCT_LIST', FATHER_BASE.'product/product_list/');

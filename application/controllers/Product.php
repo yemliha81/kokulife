@@ -31,6 +31,18 @@ class Product extends CI_Controller {
     	$this->load->view('product_view', $data);
 
 	}
+
+	public function product_list()
+	{
+		
+		$data['products'] = $this->db->select('*')
+			->where('is_deleted', 0)
+    		->get('products_table')->result_array();
+    	
+    	    
+    	$this->load->view('product_list_view', $data);
+
+	}
 	
 	public function search(){
 	    $post = $this->input->post();
