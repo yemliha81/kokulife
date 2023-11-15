@@ -22,7 +22,7 @@
     <link rel="stylesheet" href="<?php echo $_ENV['BASE_URL'];?>assets/css/jquery.scrollbar.min.css">
     <link rel="stylesheet" href="<?php echo $_ENV['BASE_URL'];?>assets/css/mobile-menu.css">
     <link rel="stylesheet" href="<?php echo $_ENV['BASE_URL'];?>assets/fonts/flaticon/flaticon.css">
-    <link rel="stylesheet" href="<?php echo $_ENV['BASE_URL'];?>assets/css/style.css?v=1.6">
+    <link rel="stylesheet" href="<?php echo $_ENV['BASE_URL'];?>assets/css/style.css?v=1.7">
 </head>
 <body class="home">
 <header class="header style7">
@@ -30,14 +30,14 @@
     <div class="container">
         <div class="main-header">
             <div class="row">
-                <div class="col-lg-3 col-sm-4 col-md-3 col-xs-7 col-ts-12 header-element">
+                <div class="col-lg-2 col-sm-4 col-md-3 col-xs-7 col-ts-12 header-element">
                     <div class="logo">
                         
                     </div>
                 </div>
-                <div class="col-lg-7 col-sm-8 col-md-6 col-xs-5 col-ts-12" style="text-align:center;">
+                <div class="col-lg-8 col-sm-8 col-md-6 col-xs-5 col-ts-12" style="text-align:center;">
                     <a href="<?php echo $_ENV['BASE_URL'];?>">
-                        <img src="<?php echo $_ENV['BASE_URL'];?>assets/cam-demo-images/koku-life-pdf.svg" alt="img" width="280">
+                        <img src="<?php echo $_ENV['BASE_URL'];?>assets/cam-demo-images/koku-life-logo.svg" alt="img" width="240">
                     </a>
                 </div>
                 <div class="col-lg-2 col-sm-12 col-md-3 col-xs-12 col-ts-12">
@@ -55,28 +55,14 @@
     <div class="header-nav-container">
         <div class="container">
             <div class="header-nav-wapper main-menu-wapper">
-                <div class="vertical-wapper block-nav-categori">
-                    <div class="block-title">
-							<span class="icon-bar">
-								<span></span>
-								<span></span>
-								<span></span>
-							</span>
-                        <span class="text">Kategorİler</span>
-                    </div>
-                    <div class="block-content verticalmenu-content">
-                        <ul class="stelina-nav-vertical vertical-menu stelina-clone-mobile-menu">
-                            <li class="menu-item">
-                                <a href="#" class="stelina-menu-item-title" title="New Arrivals">Oda Parfümleri</a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
                 <div class="header-nav">
                     <div class="container-wapper" style="display: flex;align-items: center;justify-content: flex-end;">
                         <ul class="stelina-clone-mobile-menu stelina-nav main-menu " id="menu-main-menu">
                             <li class="menu-item">
                                 <a href="<?php echo $_ENV['BASE_URL'];?>" class="stelina-menu-item-title" title="Home">Anasayfa</a>
+                            </li>
+                            <li class="menu-item">
+                                <a href="<?php echo PRODUCT_LIST;?>" class="stelina-menu-item-title" title="Shop">Kategoriler</a>
                             </li>
                             <li class="menu-item">
                                 <a href="<?php echo PRODUCT_LIST;?>" class="stelina-menu-item-title" title="Shop">Ürünler</a>
@@ -99,7 +85,7 @@
         <div class="item mobile-logo">
             <div class="logo">
                 <a href="<?php echo $_ENV['BASE_URL'];?>">
-                    <img src="<?php echo $_ENV['BASE_URL'];?>assets/cam-demo-images/koku-life-pdf.svg" alt="img" width="240">
+                    <img src="<?php echo $_ENV['BASE_URL'];?>assets/cam-demo-images/koku-life-logo.svg" alt="img" width="240">
                 </a>
             </div>
         </div>

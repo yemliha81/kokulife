@@ -7353,8 +7353,9 @@ body.vertical-menu-open .vertical-menu-overlay {
 	width: 100%;
 }
 .header-nav-wapper .vertical-wapper, .header-nav-wapper .header-nav {
-	display: table-cell;
-	vertical-align: middle;
+	display: flex;
+    align-items: center;
+    justify-content: center;
 }
 .header-nav-wapper .vertical-wapper {
 	width: 270px;
