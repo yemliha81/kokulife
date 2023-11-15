@@ -50,10 +50,10 @@
                                                 </div>
                                                 <div class="price">
                                                     <del>
-                                                        $65
+                                                    <?php echo $product['product_price']+50;?> ₺
                                                     </del>
                                                     <ins>
-                                                        $45
+                                                    <?php echo $product['product_price'];?> ₺
                                                     </ins>
                                                 </div>
                                             </div>
