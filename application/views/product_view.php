@@ -32,6 +32,8 @@
             <div class="product_info">
                 <div class="product_name info_box"><?php echo $product['product_name_en'];?></div>
                 <div class="info_box"><span class="price_text">Fiyat:</span> <?php echo $product['product_price'];?>₺</div>
+                <div class="info_box"><span class="price_text">Ürün Kodu:</span> #00<?php echo $product['id'];?></div>
+                <div class="info_box"><span class="price_text">Stokta:</span> Var</div>
                 <div class="info_box"><?php echo $product['product_description_en'];?></div>
             </div>
         </div>

@@ -92,7 +92,6 @@
                                         <div class="description">
                                             120 Ml Bambu Çubuklu Oda Kokusu
                                         </div>
-                                        <a href="#" class="button btn-shop-now">İncele</a>
                                     </div>
                                 </div>
                             </div>
@@ -108,7 +107,6 @@
                                         <div class="description">
                                             120 Ml Bambu Çubuklu Oda Kokusu
                                         </div>
-                                        <a href="#" class="button btn-shop-now">İncele</a>
                                     </div>
                                 </div>
                             </div>
@@ -132,7 +130,7 @@
                                 <div class="banner-price">
                                     
                                 </div>
-                                <a href="#" class="button btn-shop-now">Ürünleri İncele</a>
+                                <a href="<?php echo PRODUCT_LIST;?>" class="button btn-shop-now">Ürünleri İncele</a>
                             </div>
                         </div>
                     </div>
