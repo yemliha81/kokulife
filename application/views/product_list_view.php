@@ -14,7 +14,7 @@
                                                 <div class="flash">
 													<span class="onnew">
 														<span class="text">
-															new
+															Yeni
 														</span>
 													</span>
                                             </div>

@@ -1207,7 +1207,7 @@ table tr:last-child td, table tr:last-child th {
 	margin-left: 0;
 }
 .slick-slide {
-	padding: 0 15px;
+	padding: 0;
 }
 .slick-slider .slick-arrow {
 	display: inline-block;
