@@ -3,10 +3,34 @@
     <div class="fullwidth-template">
         <div class="home-slider-banner home-banner">
             <div>
-                <img src="<?php echo $_ENV['BASE_URL'];?>assets/cam-demo-images/sewox-banner-1.jpg" width="100%" />
+                <img src="<?php echo $_ENV['BASE_URL'];?>assets/banners/sewox-banner-1.jpg" width="100%" />
             </div>
             <div>
-                <img src="<?php echo $_ENV['BASE_URL'];?>assets/cam-demo-images/sewox-banner-2.jpg" width="100%" />
+                <img src="<?php echo $_ENV['BASE_URL'];?>assets/banners/sewox-banner-2.jpg" width="100%" />
+            </div>
+            <div>
+                <img src="<?php echo $_ENV['BASE_URL'];?>assets/banners/sewox-banner-3.jpg" width="100%" />
+            </div>
+            <div>
+                <img src="<?php echo $_ENV['BASE_URL'];?>assets/banners/sewox-banner-4.jpg" width="100%" />
+            </div>
+            <div>
+                <img src="<?php echo $_ENV['BASE_URL'];?>assets/banners/sewox-banner-5.jpg" width="100%" />
+            </div>
+            <div>
+                <img src="<?php echo $_ENV['BASE_URL'];?>assets/banners/sewox-banner-6.jpg" width="100%" />
+            </div>
+            <div>
+                <img src="<?php echo $_ENV['BASE_URL'];?>assets/banners/sewox-banner-7.jpg" width="100%" />
+            </div>
+            <div>
+                <img src="<?php echo $_ENV['BASE_URL'];?>assets/banners/sewox-banner-8.jpg" width="100%" />
+            </div>
+            <div>
+                <img src="<?php echo $_ENV['BASE_URL'];?>assets/banners/sewox-banner-9.jpg" width="100%" />
+            </div>
+            <div>
+                <img src="<?php echo $_ENV['BASE_URL'];?>assets/banners/sewox-banner-10.jpg" width="100%" />
             </div>
         </div>
         <div class="banner-wrapp">
@@ -121,14 +145,14 @@
                                                         (3)
                                                     </div>
                                                 </div>
-                                                <div class="price">
+                                                <!--<div class="price">
                                                     <del>
                                                     <?php echo $product['product_price']+50;?> ₺
                                                     </del>
                                                     <ins>
                                                     <?php echo $product['product_price'];?> ₺
                                                     </ins>
-                                                </div>
+                                                </div>-->
                                             </div>
                                         </div>
                                     </div>

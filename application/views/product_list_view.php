@@ -48,14 +48,14 @@
                                                         (3)
                                                     </div>
                                                 </div>
-                                                <div class="price">
+                                                <!--<div class="price">
                                                     <del>
                                                     <?php echo $product['product_price']+50;?> ₺
                                                     </del>
                                                     <ins>
                                                     <?php echo $product['product_price'];?> ₺
                                                     </ins>
-                                                </div>
+                                                </div>-->
                                             </div>
                                         </div>
                                     </div>
