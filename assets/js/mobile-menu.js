@@ -103,7 +103,7 @@
         if ( !$('.stelina-menu-clone-wrap').length && $('.stelina-clone-mobile-menu').length > 0 ) {
             $('body').prepend('<div class="stelina-menu-clone-wrap">' +
                 '<div class="stelina-menu-panels-actions-wrap">' +
-                '<span class="stelina-menu-current-panel-title">MENU</span>' +
+                '<span class="stelina-menu-current-panel-title">MENÜ</span>' +
                 '<a class="stelina-menu-close-btn stelina-menu-close-panels" href="#">x</a></div>' +
                 '<div class="stelina-menu-panels"></div>' +
                 '</div>');

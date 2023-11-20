@@ -97,7 +97,7 @@
                 </a>
             </div>
         </div>
-        <div class="item item mobile-search-box has-sub">
+        <!--<div class="item item mobile-search-box has-sub">
             <a href="#">
 						<span class="icon">
 							<i class="fa fa-search" aria-hidden="true"></i>
@@ -116,7 +116,7 @@
                     </form>
                 </div>
             </div>
-        </div>
+        </div>-->
         <div class="item menu-bar">
             <a class=" mobile-navigation  menu-toggle" href="#">
                 <span></span>
