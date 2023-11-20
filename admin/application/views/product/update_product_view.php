@@ -42,14 +42,20 @@
 							<form action="<?php echo UPDATE_PRODUCT_POST;?>" method="post" enctype="multipart/form-data">
 								<div class="m-b-20 menu-form">
 									<div>
-									    
-    										
-    										<input class="input_style dropify" type="file" name="product_image"  data-default-file="<?php echo FATHER_BASE.'files/product/img/400/'.$product['product_image'];?>"/>
-    										
-    									
-									</div>
+									    <input class="input_style dropify" type="file" name="product_image"  data-default-file="<?php echo FATHER_BASE.'files/product/img/400/'.$product['product_image'];?>"/>
+    								</div>
 									
 									<div class="menu-form-2">
+                                        <div> Kategori Seçiniz</div>
+                                        <div>
+                                            <select class="input_style" name="category_id" required >
+                                                <?php foreach($categories as $category){ ?>
+                                                    <option value="<?php echo $category['id'];?>" <?php echo ($product['category_id'] == $category['id']) ? 'selected' : ''; ?> >
+                                                        <?php echo $category['category_name_en'];?>
+                                                    </option>
+                                                <?php } ?>
+                                            </select>
+                                        </div>
 									    <div class="" style="display:grid; grid-template-columns:3fr 2fr; gap:20px;">
     										
     										<input class="input_style lng en" type="text" name="product_name_en" placeholder="Ürün Adı*" required   value="<?php echo $product['product_name_en'];?>"/>
