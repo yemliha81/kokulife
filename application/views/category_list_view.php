@@ -21,7 +21,6 @@
                                                             <a href="#">Add to Wishlist</a>
                                                         </div>
                                                     </div>
-                                                   
                                                 </div>
                                             </div>
                                         </div>

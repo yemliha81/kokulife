@@ -130,6 +130,7 @@
                                                     <a href="<?php echo $_ENV['BASE_URL'].'urun-detay/'.$product['id'];?>" class="button src">
                                                         <i class="fa fa-search"></i>
                                                     </a>
+                                                    
                                                 </div>
                                             </div>
                                         </div>
@@ -140,7 +141,7 @@
                                             <div class="group-info">
                                                 <div class="stars-rating">
                                                     <div class="star-rating">
-                                                        <span class="star-<?php echo round($product['product_price'],0);?>"></span>
+                                                        <span style="width:<?php echo (($product['product_price']/5) * 100);?>%"></span>
                                                     </div>
                                                     <div class="count-star">
                                                         (3)
