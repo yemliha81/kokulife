@@ -61,7 +61,7 @@
                                 <a href="<?php echo $_ENV['BASE_URL'];?>" class="stelina-menu-item-title" title="Home">Anasayfa</a>
                             </li>
                             <li class="menu-item">
-                                <a href="<?php echo PRODUCT_LIST;?>" class="stelina-menu-item-title" title="Shop">Kategoriler</a>
+                                <a href="<?php echo CATEGORY_LIST;?>" class="stelina-menu-item-title" title="Shop">Kategoriler</a>
                             </li>
                             <li class="menu-item">
                                 <a href="<?php echo PRODUCT_LIST;?>" class="stelina-menu-item-title" title="Shop">Ürünler</a>
@@ -73,7 +73,10 @@
                                 <a href="<?php echo PAGE_DETAIL.'iletisim';?>" class="stelina-menu-item-title" title="About">İLETİŞİM</a>
                             </li>
                             <li class="menu-item">
-                                <a target="_blank" href="https://wa.me/+905522803987" class="stelina-menu-item-title" title="About">
+                                <a href="<?php echo PAGE_DETAIL.'kullanici-yorumlari';?>" class="stelina-menu-item-title" title="About">KULLANICI YORUMLARI</a>
+                            </li>
+                            <li class="menu-item">
+                                <a target="_blank" href="https://wa.me/+905425441711" class="stelina-menu-item-title" title="About">
                                     <img src="<?php echo $_ENV['BASE_URL'];?>assets/cam-demo-images/whatsapp.svg" width="30px">
                                 </a>
                             </li>

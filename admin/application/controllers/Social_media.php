@@ -1,7 +1,7 @@
 <?php
 defined('BASEPATH') OR exit('No direct script access allowed');
 
-class Page extends CI_Controller {
+class Social_media extends CI_Controller {
     public function __construct()
     {
         parent::__construct();
@@ -17,13 +17,13 @@ class Page extends CI_Controller {
         }
     }
     
-	public function page_list()
+	public function social_media_list()
 	{
 	    
 	    $data['page'] = $_GET['page'] ?? 1;
 	    
 	    $this->db->where('is_deleted', '0');
-		$count = $this->db->count_all_results('pages_table');
+		$count = $this->db->count_all_results('social_media_table');
 		
 		$plus = (($count % 20)>0) ? 1 : 0;
 		
@@ -32,48 +32,46 @@ class Page extends CI_Controller {
 		$data['pages'] = $this->db->select('*')
 		    ->limit(20, (($data['page']-1)*20))
 		    ->where('is_deleted', '0')
-			->get('pages_table')->result_array();
+			->get('social_media_table')->result_array();
 			
-		$data['menu'] = '4';
-		$data['c_id'] = $id;
-		$data['m_id'] = $data['cat']['menu_id'];
+		$data['menu'] = '5';
 
         //debug($data);
 			
-		$this->load->view('page/page_list_view', $data);
+		$this->load->view('social_media/social_media_list_view', $data);
 	}
 	
-	public function add_page()
+	public function add_social_media()
 	{
 	    
-		$this->load->view('page/add_page_view', $data);
+		$this->load->view('social_media/add_social_media_view', $data);
 	}
 	
-	public function add_page_post()
+	public function add_social_media_post()
 	{
 		require DOC_ROOT . 'simpleImage/SimpleImage.php';
 		$post = $this->input->post();
 		//debug($post);
 		
 		
-		if(!empty($_FILES['page_image'])){
-			$file = $_FILES['page_image'];
-			$img_name = img_seo_name(time().'-'.$post['page_name']).'.jpg';
+		if(!empty($_FILES['social_media_image'])){
+			$file = $_FILES['social_media_image'];
+			$img_name = img_seo_name(time().'-'.$post['social_media_name']).'.png';
 			if( ( $file['type'] == 'image/jpeg' ) OR ( $file['type'] == 'image/png' ) ){
 				
 				if( ( $file['size'] > 0 ) AND ( $file['size'] < 3000000 ) ){
 					
 				//File Upload
 					$from_file = $file['tmp_name'];
-					$to_file = DOC_ROOT . '/files/page/img/100/' .$img_name;
-					$to_file2 = DOC_ROOT . '/files/page/img/400/' .$img_name;
-					$to_file3 = DOC_ROOT . '/files/page/img/1000/' .$img_name;
+					$to_file = DOC_ROOT . '/files/social_media/img/100/' .$img_name;
+					$to_file2 = DOC_ROOT . '/files/social_media/img/400/' .$img_name;
+					$to_file3 = DOC_ROOT . '/files/social_media/img/1000/' .$img_name;
 					$save_image = $this->save_image($from_file,$to_file, 150, 150);
 					$save_image = $this->save_image($from_file,$to_file2, 400, 400);
 					$save_image = $this->save_image($from_file,$to_file3, 1200, 1200);
 					
 					if($save_image == true){
-						$ins['page_image'] = $img_name;
+						$ins['social_media_image'] = $img_name;
 					}
 					
 				}
@@ -84,14 +82,12 @@ class Page extends CI_Controller {
 		//debug($_FILES);
 		
 		//foreach($_SESSION['lang_array'] as $lang){
-	    	$ins['category_id'] = $post['category_id'];
-		    $ins['icons'] = $post['icons'];
-		    $ins['page_name_en'] = $post['page_name_en'];
-		    $ins['page_description_en'] = $post['page_description_en'];
+		    $ins['name'] = $post['name'];
+		    $ins['url'] = $post['url'];
 		    
 		//}
 		
-		$this->db->insert('pages_table', $ins);
+		$this->db->insert('social_media_table', $ins);
 		
 		
 		if($this->db->affected_rows() > 0){
@@ -100,23 +96,23 @@ class Page extends CI_Controller {
 			$this->session->set_flashdata('process', 'fail');
 		}
 		
-		redirect(PAGE_LIST.$post['category_id']);
+		redirect(SOCIAL_MEDIA_LIST.$post['category_id']);
 		
 	}
 	
-	public function update_page($id)
+	public function update_social_media($id)
 	{
 		$data['page'] = $this->db->select('*')
 			->where('id', $id)
-			->get('pages_table')->row_array();
+			->get('social_media_table')->row_array();
 		
 		//debug($data);
 		
-		$this->load->view('page/update_page_view', $data);
+		$this->load->view('social_media/update_social_media_view', $data);
 		
 	}
 	
-	public function update_page_post()
+	public function update_social_media_post()
 	{
         //FOR TESTING
 	    require DOC_ROOT . 'simpleImage/SimpleImage.php';
@@ -124,41 +120,41 @@ class Page extends CI_Controller {
 		//debug($_FILES);
 		
 		
-		if(!empty($_FILES['page_image']['name'])){
-			$file = $_FILES['page_image'];
-			$img_name = img_seo_name(time().'-'.$post['page_name']).'.jpg';
+		if(!empty($_FILES['social_media_image']['name'])){
+			$file = $_FILES['social_media_image'];
+			$img_name = img_seo_name(time().'-'.$post['social_media_name']).'.png';
 			if( ( $file['type'] == 'image/jpeg' ) OR ( $file['type'] == 'image/png' ) ){
 				
 				if( ( $file['size'] > 0 ) AND ( $file['size'] < 3000000 ) ){
 					
 				//File Upload
 					$from_file = $file['tmp_name'];
-					$to_file = DOC_ROOT . '/files/page/img/100/' .$img_name;
-					$to_file2 = DOC_ROOT . '/files/page/img/400/' .$img_name;
-					$to_file3 = DOC_ROOT . '/files/page/img/1000/' .$img_name;
+					$to_file = DOC_ROOT . '/files/social_media/img/100/' .$img_name;
+					$to_file2 = DOC_ROOT . '/files/social_media/img/400/' .$img_name;
+					$to_file3 = DOC_ROOT . '/files/social_media/img/1000/' .$img_name;
 					$save_image = $this->save_image($from_file,$to_file, 150, 150);
 					$save_image = $this->save_image($from_file,$to_file2, 400, 400);
 					$save_image = $this->save_image($from_file,$to_file3, 1200, 1200);
 					
 					if($save_image == true){
-						$upd['page_image'] = $img_name;
+						$upd['social_media_image'] = $img_name;
 					}
 					
 				}
 			}
 			
 		}else{
-		    //$upd['page_image'] = '';
+		    //$upd['social_media_image'] = '';
 		}
 		
 		//foreach($_SESSION['lang_array'] as $lang){
-		    $upd['page_name_en'] = $post['page_name_en'];
-		    $upd['page_description_en'] = $post['page_description_en'];
+		    $upd['name'] = $post['name'];
+		    $upd['url'] = $post['url'];
 		    
 		//}
 		
 		
-		$this->db->update('pages_table', $upd, array('id' => $post['id']));
+		$this->db->update('social_media_table', $upd, array('id' => $post['id']));
 		
 		if($this->db->affected_rows() > 0){
 			$this->session->set_flashdata('process', 'success');
@@ -166,11 +162,11 @@ class Page extends CI_Controller {
 			$this->session->set_flashdata('process', 'fail');
 		}
 		
-		redirect(PAGE_LIST.$post['category_id']);
+		redirect(SOCIAL_MEDIA_LIST.$post['category_id']);
 		
 	}
 	
-	public function hide_page()
+	public function hide_social_media()
 	{
 		$post = $this->input->post();
 	    $id = $post['id'];
@@ -179,7 +175,7 @@ class Page extends CI_Controller {
 		$hidden = ($post['hidden'] == '0') ? 1 : 0;
 		
 		if($id != ''){
-		    $this->db->update('pages_table', array('is_hidden' => $hidden), array('id' => $id));
+		    $this->db->update('social_media_table', array('is_hidden' => $hidden), array('id' => $id));
 		}
 		if($this->db->affected_rows() > 0){
 			echo 'ok';
@@ -189,13 +185,13 @@ class Page extends CI_Controller {
 		
 	}
 	
-	public function delete_page()
+	public function delete_social_media()
 	{
 		$post = $this->input->post();
 	    $id = $post['id'];
 		//todo delete script
 		if($id != ''){
-		    $this->db->update('pages_table', array('is_deleted' => 1), array('id' => $id));
+		    $this->db->update('social_media_table', array('is_deleted' => 1), array('id' => $id));
 		}
 		if($this->db->affected_rows() > 0){
 			echo 'ok';
@@ -224,7 +220,7 @@ class Page extends CI_Controller {
 			//->colorize('DarkBlue')                      // tint dark blue
 			//->border('black', 10)                       // add a 10 pixel black border
 			//->overlay('watermark.png', 'bottom right')  // add a watermark image
-			->toFile($to_file, 'image/jpeg') ;     // convert to PNG and save a copy to new-image.png
+			->toFile($to_file, 'image/png') ;     // convert to PNG and save a copy to new-image.png
 			//->toScreen();                               // output to the screen
 			return true;
 		  // And much more! ðŸ’ª

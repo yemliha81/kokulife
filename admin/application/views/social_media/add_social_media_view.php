@@ -29,37 +29,30 @@
 
     <div class="page-content">
         
-        <a href="<?php echo PRODUCT_LIST.$c_id;?>" class="select-lang"><span class="lnr lnr-chevron-left"></span> Ürün Listesine dön</a>
-        
         <div class="main-content m-t-20">
             <div class="">
 							
 							<div class="top-ttl">
     							<div class="r_ttl">
-    								<div class="ttl">Ürün Ekle</div>
-    								<div>Lütfen ürün bilgilerini giriniz</div>
+    								<div class="ttl">Yeni Hesap Ekle</div>
+    								<div>Lütfen Hesap bilgilerini giriniz</div>
     							</div>
     							
     						</div>
-							<form action="<?php echo ADD_PRODUCT_POST;?>" method="post" enctype="multipart/form-data">
+							<form action="<?php echo ADD_SOCIAL_MEDIA_POST;?>" method="post" enctype="multipart/form-data">
 								<div class="m-b-20 menu-form">
 									<div>
-									    
-    										
-    										<input class="input_style dropify" type="file" name="product_image"/>
-    										
-    									
-									</div>
+									    <input class="input_style dropify" type="file" name="social_media_image"/>
+    								</div>
 									
 									<div class="menu-form-2">
 									    <div class="" style="display:grid; grid-template-columns:3fr 2fr; gap:20px;">
     										
-    										<input class="input_style lng en" type="text" name="product_name_en" placeholder="Ürün Adı*" required  />
-    										<input class="input_style" type="number" step="0.01" name="product_price" placeholder="Ürün Fiyatı*" required  />
+    										<input class="input_style lng en" type="text" name="name" placeholder="Hesap Adı*" required  />
     										
     									</div>
     									<div class="">
-    										<textarea class="input_style lng en" name="product_description_en" placeholder="Ürün Açıklaması*" required></textarea>
+                                        <input class="input_style lng en" type="text" name="url" placeholder="Hesap Linki*" required  />
     									</div>
     									
 									</div>
@@ -83,6 +76,7 @@
 		$('.dropify').dropify();
 		$('.file-icon').addClass('lnr lnr-upload');
 		$('.file-icon').removeClass('file-icon');
+        $('.summernote').summernote();
 	});
 	$(".select-lang").click(function(){
         var lang = $(this).attr('lang')

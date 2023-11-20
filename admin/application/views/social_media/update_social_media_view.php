@@ -9,18 +9,20 @@
     .lnr-upload{
         font-size: 50px;
     }
-	.menu-form{
+    .menu-form{
         display:grid;
         grid-template-columns:250px auto;
         gap:20px;
     }
-    
     .menu-form-2{
         display: flex;
-		flex-direction: column;
-		gap: 20px;
-		justify-content: space-evenly;
-		}
+    flex-direction: column;
+    /* gap: 20px; */
+    justify-content: space-evenly;
+    }
+    .act{
+        background:#FFF1F3;
+    }
 </style>
 <div class="x-content">
     <?php include(APPPATH.'views/includes/left_nav1.php');?>
@@ -32,41 +34,38 @@
 							
 							<div class="top-ttl">
     							<div class="r_ttl">
-    								<div class="ttl">Kategori Güncelle</div>
-    								<div></div>
+    								<div class="ttl">Hesap Güncelle</div>
+    								<div>Lütfen sayfa bilgilerini giriniz</div>
     							</div>
     							
     						</div>
-							<form action="<?php echo UPDATE_CATEGORY_POST;?>" method="post" enctype="multipart/form-data">
+							<form action="<?php echo UPDATE_SOCIAL_MEDIA_POST;?>" method="post" enctype="multipart/form-data">
 								<div class="m-b-20 menu-form">
 									<div>
-											
-												
-											<input class="input_style dropify" type="file" name="category_image"  data-default-file="<?php echo FATHER_BASE.'files/category/img/400/'.$category['category_image'];?>"/>
-											
-										
+									    
+    										
+    										<input class="input_style dropify" type="file" name="social_media_image"  data-default-file="<?php echo FATHER_BASE.'files/social_media/img/400/'.$page['social_media_image'];?>"/>
+    										
+    									
 									</div>
 									
 									<div class="menu-form-2">
-									
-									    <div class="" >
+									    <div class="" style="display:grid; grid-template-columns:3fr 2fr; gap:20px;">
     										
-    										<input class="input_style lng en" type="text" name="category_name_en" placeholder="Category name* (EN)" required   value="<?php echo $category['category_name_en'];?>"/>
-
+    										<input class="input_style lng en" type="text" name="name" placeholder="Hesap Adı* (EN)" required   value="<?php echo $page['name'];?>"/>
     									</div>
     									<div class="">
-    										<textarea class="input_style lng en" name="category_description_en" placeholder="Category description* (EN)"><?php echo $category['category_description_en'];?></textarea>
-    										
+                                        <input class="input_style lng en" type="text" name="url" placeholder="Hesap Linki* (EN)" required   value="<?php echo $page['url'];?>"/>
     									</div>
     									
-    									
 									</div>
+									
 								</div>
 								
 								<div class="m-b-20 form-bottom">
 									<button type="submit" class="btn_custom"><span class="lnr lnr-upload"></span>Kaydet</button>
 								</div>
-								<input type="hidden" name="id" value="<?php echo $category['id'];?>"/>
+								<input type="hidden" name="id" value="<?php echo $page['id'];?>"/>
 							</form>
 						</div>
         </div>
@@ -81,10 +80,9 @@
 		$('.dropify').dropify();
 		$('.file-icon').addClass('lnr lnr-upload');
 		$('.file-icon').removeClass('file-icon');
+        $('.summernote').summernote({
+            height: 400
+        });
+		
 	});
-	$(".select-lang").click(function(){
-        var lang = $(this).attr('lang')
-        $('.lng').hide()
-        $('.'+lang).show()
-      });
 </script>

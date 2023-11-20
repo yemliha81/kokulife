@@ -38,7 +38,7 @@ class Product extends CI_Controller {
 		    ->where('is_deleted', '0')
 			->get('products_table')->result_array();
 			
-		$data['menu'] = '4';
+		$data['menu'] = '2';
 		$data['c_id'] = $id;
 		$data['m_id'] = $data['cat']['menu_id'];
 			

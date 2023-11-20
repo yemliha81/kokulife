@@ -19,16 +19,15 @@ class Welcome extends CI_Controller {
     
 	public function index()
 	{
-	    
-		//$data['banners'] = $this->db->select('*')->order_by('sort', 'ASC')->get('banner_table')->result_array();
 		
 		$data['products'] = $this->db->select('*')
-		//->join('category_table', 'products_table.cat_id = category_table.id', 'left')
-		->where('is_deleted', 0)
-	    ->get('products_table')->result_array();
+			->where('is_deleted', 0)
+			->get('products_table')->result_array();
+
+		$data['social_list'] = $this->db->select('*')
+			->where('is_deleted', 0)
+			->get('social_media_table')->result_array();
 	    
-	    //debug($data);
-		
 		
 		$this->load->view('home_view', $data);
 	}

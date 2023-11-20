@@ -51,21 +51,13 @@
                     <div class="col-sm-12 col-xs-12">
                         <div class="stelina-socials">
                             <ul class="socials">
-                                <li>
-                                    <a href="#" class="social-item" target="_blank">
-                                        <i class="icon fa fa-facebook"></i>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#" class="social-item" target="_blank">
-                                        <i class="icon fa fa-twitter"></i>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#" class="social-item" target="_blank">
-                                        <i class="icon fa fa-instagram"></i>
-                                    </a>
-                                </li>
+                                <?php foreach($social_list as $social){ ?>
+                                    <li>
+                                        <a target="blank" href="<?php echo $social['url'];?>" class="social-item" target="_blank">
+                                           <img src="<?php echo $_ENV['BASE_URL'];?>admin/files/social_media/img/100/<?php echo $social['social_media_image'];?>" width="50">
+                                        </a>
+                                    </li>
+                                <?php } ?>
                             </ul>
                         </div>
                         <div class="coppyright">

@@ -138,3 +138,11 @@ define( 'UPDATE_PAGE', FATHER_BASE.'page/update_page/' );
 define( 'UPDATE_PAGE_POST', FATHER_BASE.'page/update_page_post/' );
 define( 'DELETE_PAGE', FATHER_BASE.'page/delete_page/' );
 define( 'HIDE_PAGE', FATHER_BASE.'page/hide_page/' );
+
+define( 'SOCIAL_MEDIA_LIST', FATHER_BASE.'social_media/social_media_list/' );
+define( 'ADD_SOCIAL_MEDIA', FATHER_BASE.'social_media/add_social_media/' );
+define( 'ADD_SOCIAL_MEDIA_POST', FATHER_BASE.'social_media/add_social_media_post/' );
+define( 'UPDATE_SOCIAL_MEDIA', FATHER_BASE.'social_media/update_social_media/' );
+define( 'UPDATE_SOCIAL_MEDIA_POST', FATHER_BASE.'social_media/update_social_media_post/' );
+define( 'DELETE_SOCIAL_MEDIA', FATHER_BASE.'social_media/delete_social_media/' );
+define( 'HIDE_SOCIAL_MEDIA', FATHER_BASE.'social_media/hide_social_media/' );

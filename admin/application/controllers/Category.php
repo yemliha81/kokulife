@@ -17,12 +17,11 @@ class Category extends CI_Controller {
         }
     }
     
-	public function category_list($id)
+	public function category_list()
 	{
 	    
 	    $data['page'] = $_GET['page'] ?? 1;
 	    
-	    $this->db->where('menu_id', $id);
 	    $this->db->where('is_deleted', '0');
 		$count = $this->db->count_all_results('category_table');
 		
@@ -30,33 +29,21 @@ class Category extends CI_Controller {
 		$plus = (($count % 20)>0) ? 1 : 0;
 		
 		$data['total'] = (($count - ($count % 20) ) / 20)+$plus;
-		
-		$data['menu'] = $this->db->select('restaurant_id')
-		    ->where('id', $id)
-		    ->get('menus_table')->row_array();
-	    
-	    $data['rest'] = $this->db->select('id')
-		    ->where('uniq_id', $data['menu']['restaurant_id'])
-		    ->get('restaurants_table')->row_array();
 	    
 		$data['categories'] = $this->db->select('*')
 		    ->limit(20, (($data['page']-1)*20))
-		    ->where('menu_id', $id)
 		    ->where('is_deleted', '0')
 			->get('category_table')->result_array();
 			
-		$data['menu'] = '4';
-		$data['c_id'] = $id;
-		$data['r_id'] = $data['rest']['id'];
+		$data['menu'] = '1_1';
 		
 		//debug($data);
 			
 		$this->load->view('category/category_list_view', $data);
 	}
 	
-	public function add_category($id)
+	public function add_category()
 	{
-	    $data['m_id'] = $id;
 		$this->load->view('category/add_category_view', $data);
 	}
 	
@@ -69,7 +56,7 @@ class Category extends CI_Controller {
 		
 		if(!empty($_FILES['category_image'])){
 			$file = $_FILES['category_image'];
-			$img_name = img_seo_name(time().'-'.$post['category_name']).'.jpg';
+			$img_name = img_seo_name(time().'-'.$post['category_name_en']).'.jpg';
 			if( ( $file['type'] == 'image/jpeg' ) OR ( $file['type'] == 'image/png' ) ){
 				
 				if( ( $file['size'] > 0 ) AND ( $file['size'] < 3000000 ) ){
@@ -95,15 +82,9 @@ class Category extends CI_Controller {
 		//debug($_FILES);
 		
 		//foreach($_SESSION['lang_array'] as $lang){
-	    	$ins['menu_id'] = $post['menu_id'];
 		    $ins['category_name_en'] = $post['category_name_en'];
 		    $ins['category_description_en'] = $post['category_description_en']??'-';
-		    if(!empty($post['category_name_sr'])){
-		        $ins['category_name_sr'] = $post['category_name_sr'];
-		    }
-		    if(!empty($post['category_description_sr'])){
-		        $ins['category_description_sr'] = $post['category_description_sr'];
-		    }
+		  
 		//}
 		
 		
@@ -140,7 +121,7 @@ class Category extends CI_Controller {
 		
 		if(!empty($_FILES['category_image'])){
 			$file = $_FILES['category_image'];
-			$img_name = img_seo_name(time().'-'.$post['category_name']).'.jpg';
+			$img_name = img_seo_name(time().'-'.$post['category_name_en']).'.jpg';
 			if( ( $file['type'] == 'image/jpeg' ) OR ( $file['type'] == 'image/png' ) ){
 				
 				if( ( $file['size'] > 0 ) AND ( $file['size'] < 3000000 ) ){
