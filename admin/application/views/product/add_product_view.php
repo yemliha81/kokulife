@@ -55,7 +55,7 @@
 									    <div class="" style="display:grid; grid-template-columns:3fr 2fr; gap:20px;">
     										
     										<input class="input_style lng en" type="text" name="product_name_en" placeholder="Ürün Adı*" required  />
-    										<input class="input_style" type="number" step="0.01" name="product_price" placeholder="Ürün Fiyatı*" required  />
+    										<input class="input_style" type="number" min="1" max="5" step="1" name="product_price" placeholder="Ürün Puanı*" required  />
     										
     									</div>
     									<div class="">

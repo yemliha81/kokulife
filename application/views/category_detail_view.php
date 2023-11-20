@@ -43,7 +43,7 @@
                                             <div class="group-info">
                                                 <div class="stars-rating">
                                                     <div class="star-rating">
-                                                        <span class="star-3"></span>
+                                                        <span class="star-<?php echo $product['product_price'];?>"></span>
                                                     </div>
                                                     <div class="count-star">
                                                         (3)
