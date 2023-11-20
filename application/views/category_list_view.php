@@ -21,8 +21,7 @@
                                                             <a href="#">Add to Wishlist</a>
                                                         </div>
                                                     </div>
-                                                    <a href="<?php echo $_ENV['BASE_URL'].'kategori-detay/'.$product['id'];?>" class="button quick-wiew-button">İncele</a>
-                                                    
+                                                   
                                                 </div>
                                             </div>
                                         </div>

@@ -23,6 +23,11 @@
     <link rel="stylesheet" href="<?php echo $_ENV['BASE_URL'];?>assets/css/mobile-menu.css">
     <link rel="stylesheet" href="<?php echo $_ENV['BASE_URL'];?>assets/fonts/flaticon/flaticon.css">
     <link rel="stylesheet" href="<?php echo $_ENV['BASE_URL'];?>assets/css/style.css?v=1.8">
+    <style>
+        .src i{
+            font-size:20px;
+        }
+    </style>
 </head>
 <body class="home">
 <header class="header style7">

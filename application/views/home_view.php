@@ -127,8 +127,9 @@
                                                             <a href="#">Add to Wishlist</a>
                                                         </div>
                                                     </div>
-                                                    <a href="<?php echo $_ENV['BASE_URL'].'urun-detay/'.$product['id'];?>" class="button quick-wiew-button">İncele</a>
-                                                    
+                                                    <a href="<?php echo $_ENV['BASE_URL'].'urun-detay/'.$product['id'];?>" class="button src">
+                                                        <i class="fa fa-search"></i>
+                                                    </a>
                                                 </div>
                                             </div>
                                         </div>
@@ -139,7 +140,7 @@
                                             <div class="group-info">
                                                 <div class="stars-rating">
                                                     <div class="star-rating">
-                                                        <span class="star-<?php echo $product['product_price'];?>"></span>
+                                                        <span class="star-<?php echo round($product['product_price'],0);?>"></span>
                                                     </div>
                                                     <div class="count-star">
                                                         (3)

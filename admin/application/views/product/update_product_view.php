@@ -53,7 +53,7 @@
 									    <div class="" style="display:grid; grid-template-columns:3fr 2fr; gap:20px;">
     										
     										<input class="input_style lng en" type="text" name="product_name_en" placeholder="Ürün Adı*" required   value="<?php echo $product['product_name_en'];?>"/>
-    										<input class="input_style" type="number" min="1" max="5" step=".1" name="product_price" placeholder="Ürün Puanı*" required  value="<?php echo $product['product_price'];?>" />
+    										<input class="input_style" type="number" min="1" max="5" step="1" name="product_price" placeholder="Ürün Puanı*" required  value="<?php echo $product['product_price'];?>" />
     									</div>
     									<div class="">
     										<textarea class="input_style lng en" name="product_description_en" placeholder="Food description* (EN)" required><?php echo $product['product_description_en'];?></textarea>
