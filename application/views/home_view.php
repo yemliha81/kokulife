@@ -4,7 +4,9 @@
         <div class="home-slider-banner home-banner">
             <?php foreach($banners as $banner){ ?>
                 <div>
-                    <img src="<?php echo $_ENV['BASE_URL'];?>admin/files/banner/img/1000/<?php echo $banner['banner_image'];?>" width="100%" />
+                    <a href="<?php echo $banner['url'];?>">
+                        <img src="<?php echo $_ENV['BASE_URL'];?>admin/files/banner/img/1000/<?php echo $banner['banner_image'];?>" width="100%" />
+                    </a>
                 </div>
             <?php } ?>
         </div>
