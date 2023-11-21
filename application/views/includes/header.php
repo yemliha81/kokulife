@@ -34,7 +34,7 @@
     <div class="container">
         <div class="main-header">
             <div class="row">
-                <div class="col-lg-2 col-sm-4 col-md-3 col-xs-7 col-ts-12 header-element">
+                <div class="col-lg-2 col-sm-2 col-md-3 col-xs-7 col-ts-12 header-element">
                     <div class="logo">
                         
                     </div>
@@ -44,7 +44,7 @@
                         <img src="<?php echo $_ENV['BASE_URL'];?>assets/cam-demo-images/koku-life-logo.svg" alt="img" width="280">
                     </a>
                 </div>
-                <div class="col-lg-2 col-sm-12 col-md-3 col-xs-12 col-ts-12">
+                <div class="col-lg-2 col-sm-2 col-md-3 col-xs-12 col-ts-12">
                     <div class="header-control">
                         <a class="menu-bar mobile-navigation menu-toggle" href="#">
                             <span></span>
