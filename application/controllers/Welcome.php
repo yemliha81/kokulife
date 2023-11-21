@@ -28,6 +28,9 @@ class Welcome extends CI_Controller {
 			->where('is_deleted', 0)
 			->get('social_media_table')->result_array();
 	    
+		$data['banners'] = $this->db->select('*')
+			->where('is_deleted', 0)
+			->get('banner_table')->result_array();
 		
 		$this->load->view('home_view', $data);
 	}

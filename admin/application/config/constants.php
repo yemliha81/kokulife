@@ -146,3 +146,11 @@ define( 'UPDATE_SOCIAL_MEDIA', FATHER_BASE.'social_media/update_social_media/' )
 define( 'UPDATE_SOCIAL_MEDIA_POST', FATHER_BASE.'social_media/update_social_media_post/' );
 define( 'DELETE_SOCIAL_MEDIA', FATHER_BASE.'social_media/delete_social_media/' );
 define( 'HIDE_SOCIAL_MEDIA', FATHER_BASE.'social_media/hide_social_media/' );
+
+define( 'BANNER_LIST', FATHER_BASE.'banner/banner_list/' );
+define( 'ADD_BANNER', FATHER_BASE.'banner/add_banner/' );
+define( 'ADD_BANNER_POST', FATHER_BASE.'banner/add_banner_post/' );
+define( 'UPDATE_BANNER', FATHER_BASE.'banner/update_banner/' );
+define( 'UPDATE_BANNER_POST', FATHER_BASE.'banner/update_banner_post/' );
+define( 'DELETE_BANNER', FATHER_BASE.'banner/delete_banner/' );
+define( 'HIDE_BANNER', FATHER_BASE.'banner/hide_banner/' );

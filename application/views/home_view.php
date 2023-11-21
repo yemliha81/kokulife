@@ -2,36 +2,11 @@
 <div>
     <div class="fullwidth-template">
         <div class="home-slider-banner home-banner">
-            <div>
-                <img src="<?php echo $_ENV['BASE_URL'];?>assets/banners/sewox-banner-1.jpg" width="100%" />
-            </div>
-            <div>
-                <img src="<?php echo $_ENV['BASE_URL'];?>assets/banners/sewox-banner-2.jpg" width="100%" />
-            </div>
-            <div>
-                <img src="<?php echo $_ENV['BASE_URL'];?>assets/banners/sewox-banner-3.jpg" width="100%" />
-            </div>
-            <div>
-                <img src="<?php echo $_ENV['BASE_URL'];?>assets/banners/sewox-banner-4.jpg" width="100%" />
-            </div>
-            <div>
-                <img src="<?php echo $_ENV['BASE_URL'];?>assets/banners/sewox-banner-5.jpg" width="100%" />
-            </div>
-            <div>
-                <img src="<?php echo $_ENV['BASE_URL'];?>assets/banners/sewox-banner-6.jpg" width="100%" />
-            </div>
-            <div>
-                <img src="<?php echo $_ENV['BASE_URL'];?>assets/banners/sewox-banner-7.jpg" width="100%" />
-            </div>
-            <div>
-                <img src="<?php echo $_ENV['BASE_URL'];?>assets/banners/sewox-banner-8.jpg" width="100%" />
-            </div>
-            <div>
-                <img src="<?php echo $_ENV['BASE_URL'];?>assets/banners/sewox-banner-9.jpg" width="100%" />
-            </div>
-            <div>
-                <img src="<?php echo $_ENV['BASE_URL'];?>assets/banners/sewox-banner-10.jpg" width="100%" />
-            </div>
+            <?php foreach($banners as $banner){ ?>
+                <div>
+                    <img src="<?php echo $_ENV['BASE_URL'];?>admin/files/banner/img/1000/<?php echo $banner['banner_image'];?>" width="100%" />
+                </div>
+            <?php } ?>
         </div>
         <div class="banner-wrapp">
             <div class="container">
