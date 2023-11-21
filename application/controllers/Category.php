@@ -16,7 +16,9 @@ class Category extends CI_Controller {
     
 	public function category_list()
 	{
-		
+		$data['social_list'] = $this->db->select('*')
+			->where('is_deleted', 0)
+			->get('social_media_table')->result_array();
 		$data['categories'] = $this->db->select('*')
 			->where('is_deleted', 0)
     		->get('category_table')->result_array();
@@ -39,7 +41,10 @@ class Category extends CI_Controller {
 			->where('category_id', $id)
     		->get('products_table')->result_array();
     	
-    	    
+		$data['social_list'] = $this->db->select('*')
+			->where('is_deleted', 0)
+			->get('social_media_table')->result_array();
+
     	$this->load->view('category_detail_view', $data);
 
 	}

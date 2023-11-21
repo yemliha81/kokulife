@@ -12,11 +12,15 @@ class Product extends CI_Controller {
         if(empty($_SESSION['lang_array'])){
             $_SESSION['lang_array'] = array('tr', 'en');
         }
+		
     }
     
 	public function detail($id)
 	{
-		
+		$data['social_list'] = $this->db->select('*')
+			->where('is_deleted', 0)
+			->get('social_media_table')->result_array();
+			
 		$data['product'] = $this->db->select('*')
 		    //->join('category_table', 'products_table.cat_id = category_table.id', 'left')
     		->where('products_table.id', $id)
@@ -33,6 +37,9 @@ class Product extends CI_Controller {
 			->where('is_deleted', 0)
     		->get('products_table')->result_array();
     	
+		$data['social_list'] = $this->db->select('*')
+			->where('is_deleted', 0)
+			->get('social_media_table')->result_array();
     	    
     	$this->load->view('product_list_view', $data);
 

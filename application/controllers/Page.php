@@ -17,7 +17,9 @@ class Page extends CI_Controller {
 	public function index($page_seo_title){
 	    
 	    $data['page'] = $this->db->select('*')->where('page_seo_title', $page_seo_title)->get('pages_table')->row_array();
-	    
+	    $data['social_list'] = $this->db->select('*')
+			->where('is_deleted', 0)
+			->get('social_media_table')->result_array();
 	    $this->load->view('page_view', $data);
 	}
 	
