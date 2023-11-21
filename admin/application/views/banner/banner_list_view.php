@@ -70,7 +70,7 @@
 					<div style='padding:20px;text-align:center;'>
 					    <?php for($i=1; $i<=$total; $i++){ ?>
 					    
-					        <a class='page <?php if($page == $i){ echo 'act'; }?>' href='<?php echo SOCIAL_MEDIA_LIST.$c_id;?>?page=<?php echo $i;?>'><?php echo $i;?></a>
+					        <a class='page <?php if($page == $i){ echo 'act'; }?>' href='<?php echo BANNER_LIST.$c_id;?>?page=<?php echo $i;?>'><?php echo $i;?></a>
 					    
 					    <?php } ?>
 					</div>
@@ -101,12 +101,12 @@
     })
     
     $('.delete_menu').click(function(){
-        if(confirm('BU HESABI SİLMEK İSTEDİĞİNİZDEN EMİN MİSİNİZ?')){
+        if(confirm('BU SLAYTI SİLMEK İSTEDİĞİNİZDEN EMİN MİSİNİZ?')){
             var id = $(this).attr('id');
         $.ajax({
             context : $(this),
             type : 'POST',
-            url : '<?php echo DELETE_SOCIAL_MEDIA;?>',
+            url : '<?php echo DELETE_BANNER;?>',
             data : {'id' : id},
             success : function(response){
                 console.log(response)
