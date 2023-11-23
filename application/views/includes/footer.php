@@ -28,7 +28,17 @@
                             <div class="list">
                                 Bizi sosyal medyada takip edin.
                             </div>
-                           
+                            <div class="stelina-socials">
+                                <ul class="socials">
+                                    <?php foreach($social_list as $social){ ?>
+                                        <li>
+                                            <a target="blank" href="<?php echo $social['url'];?>" class="social-item" target="_blank">
+                                            <img src="<?php echo $_ENV['BASE_URL'];?>admin/files/social_media/img/100/<?php echo $social['social_media_image'];?>" width="50">
+                                            </a>
+                                        </li>
+                                    <?php } ?>
+                                </ul>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -49,17 +59,7 @@
             <div class="footer-end">
                 <div class="row">
                     <div class="col-sm-12 col-xs-12">
-                        <div class="stelina-socials">
-                            <ul class="socials">
-                                <?php foreach($social_list as $social){ ?>
-                                    <li>
-                                        <a target="blank" href="<?php echo $social['url'];?>" class="social-item" target="_blank">
-                                           <img src="<?php echo $_ENV['BASE_URL'];?>admin/files/social_media/img/100/<?php echo $social['social_media_image'];?>" width="50">
-                                        </a>
-                                    </li>
-                                <?php } ?>
-                            </ul>
-                        </div>
+                        
                         <div class="coppyright">
                             Copyright © 2023
                             <a href="#">Kokulife</a>
