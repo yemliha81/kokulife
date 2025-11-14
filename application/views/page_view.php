@@ -1,5 +1,5 @@
 <?php include('includes/header.php');?>
-	<div class="holder">
+	<div class="holder" style="background:#FFFFFF; padding-top:20px">
 	    <div class="container">
 		<div class="page-title text-center" style="margin-top:20px; font-size:20px;">
 			<b><?php echo  $page['page_name_en'];?></b>
@@ -7,5 +7,5 @@
 		<div style="margin-top:20px;">
 			<?php echo  $page['page_description_en'];?>
         </div>
-</div>
+	</div>
 <?php include('includes/footer.php');?>

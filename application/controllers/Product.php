@@ -25,6 +25,9 @@ class Product extends CI_Controller {
 		    //->join('category_table', 'products_table.cat_id = category_table.id', 'left')
     		->where('products_table.id', $id)
     		->get('products_table')->row_array();
+		
+		
+		$data['theme'] = 'light';
     	    
     	$this->load->view('product_view', $data);
 

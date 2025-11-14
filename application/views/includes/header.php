@@ -1,3 +1,108 @@
+<!doctype html>
+<html lang="en" data-bs-theme="<?=$theme??"dark"?>">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport"
+            content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Kokulife</title>
+        <link rel="shortcut icon" type="image/x-icon" href="<?php echo $_ENV['BASE_URL'];?>assets/images/kokulife-favicon.png"/>
+    <link href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&amp;display=swap"
+          rel="stylesheet">
+        <link rel="stylesheet" href="<?php echo $_ENV['BASE_URL'];?>assets/vendors/lightgallery/css/lightgallery-bundle.min.css">
+        <link rel="stylesheet" href="<?php echo $_ENV['BASE_URL'];?>assets/vendors/animate/animate.min.css">
+        <link rel="stylesheet" href="<?php echo $_ENV['BASE_URL'];?>assets/vendors/slick/slick.css">
+        <link rel="stylesheet" href="<?php echo $_ENV['BASE_URL'];?>assets/vendors/mapbox-gl/mapbox-gl.min.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+        <link href="https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="<?php echo $_ENV['BASE_URL'];?>assets/css/theme.css">
+
+        <link rel="stylesheet" href="<?php echo $_ENV['BASE_URL'];?>assets/css/font-awesome.min.css">
+        <link rel="stylesheet" href="<?php echo $_ENV['BASE_URL'];?>assets/css/style.css?v=1.8.1">
+        <style>
+            #header .nav-item > a{
+                white-space: nowrap;
+            }
+            .nav-bar-custom{
+                width: 100%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+            @media (max-width: 800px) {
+                .nav-bar-custom{
+                    z-index: 111;
+                    background: #000;
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <header id="header" class="header header-sticky header-sticky-smart disable-transition-all z-index-5">
+            <div class="topbar" style="background-color: #DAFAF4;">
+                <div class="container">
+                    <p class="mb-0 text-dark text-center p-4 fs-14px fw-medium ls-1 text-uppercase">
+                        Kokulife ile sağlıklı ve mutlu bir yaşamın kapılarını aralayın!
+                    </p>
+                </div>
+            </div>
+            <div class="header-above mb-3">
+                <div class="container d-xl-block">
+                    <div class="pt-8 d-flex">
+                        <a href="<?php echo $_ENV['BASE_URL'];?>" class="navbar-brand px-8 py-4 mx-auto">
+                            <img class="light-mode-img" src="<?php echo $_ENV['BASE_URL'];?>assets/cam-demo-images/koku-life-logo.svg" width="179"  alt="Kokulife Logo">
+                            <img class="dark-mode-img" src="<?php echo $_ENV['BASE_URL'];?>assets/cam-demo-images/koku-life-logo-white.svg" width="179"  alt="Kokulife Logo">
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="sticky-area">
+                <div class="main-header nav navbar bg-body navbar-light navbar-expand-xl py-6 py-xl-0">
+                    <div class="container">
+                        
+                        <div class="d-xl-flex nav-bar-custom">
+                            <ul class="navbar-nav">
+                                <li class="nav-item transition-all-xl-1 py-xl-7 py-0 me-xxl-12 me-xl-10">
+                                    <a class="nav-link d-flex justify-content-between position-relative py-xl-0 px-xl-0 fw-semibold ls-1 fs-6 fs-xl-15px text-body-emphasis"
+                                        href="<?php echo $_ENV['BASE_URL'];?>"  id="menu-item-home" aria-haspopup="false" aria-expanded="false">Anasayfa</a>
+                                    
+                                </li>
+                                <li class="nav-item transition-all-xl-1 py-xl-7 py-0 me-xxl-12 me-xl-10">
+                                    <a class="nav-link d-flex justify-content-between position-relative py-xl-0 px-xl-0 fw-semibold ls-1 fs-6 fs-xl-15px text-body-emphasis"
+                                        href="<?php echo CATEGORY_LIST;?>"  id="menu-item-home" aria-haspopup="false" aria-expanded="false">Kategoriler</a>
+                                    
+                                </li>
+                                <li class="nav-item transition-all-xl-1 py-xl-7 py-0 me-xxl-12 me-xl-10">
+                                    <a class="nav-link d-flex justify-content-between position-relative py-xl-0 px-xl-0 fw-semibold ls-1 fs-6 fs-xl-15px text-body-emphasis"
+                                        href="<?php echo PRODUCT_LIST;?>products"  id="menu-item-home" aria-haspopup="false" aria-expanded="false">Ürünler</a>
+                                    
+                                </li>
+                                <li class="nav-item transition-all-xl-1 py-xl-7 py-0 me-xxl-12 me-xl-10">
+                                    <a class="nav-link d-flex justify-content-between position-relative py-xl-0 px-xl-0 fw-semibold ls-1 fs-6 fs-xl-15px text-body-emphasis"
+                                        href="<?php echo PAGE_DETAIL.'kullanici-yorumlari';?>"  id="menu-item-home" aria-haspopup="false" aria-expanded="false">Kullanıcı Yorumları</a>
+                                    
+                                </li>
+                                <li class="nav-item transition-all-xl-1 py-xl-7 py-0 me-xxl-12 me-xl-10">
+                                    <a class="nav-link d-flex justify-content-between position-relative py-xl-0 px-xl-0 fw-semibold ls-1 fs-6 fs-xl-15px text-body-emphasis"
+                                        href="<?php echo PAGE_DETAIL.'hakkimizda';?>"  id="menu-item-home" aria-haspopup="false" aria-expanded="false">Hakkımızda</a>
+                                    
+                                </li>
+                                <li class="nav-item transition-all-xl-1 py-xl-7 py-0 me-xxl-12 me-xl-10">
+                                    <a class="nav-link d-flex justify-content-between position-relative py-xl-0 px-xl-0 fw-semibold ls-1 fs-6 fs-xl-15px text-body-emphasis"
+                                        href="<?php echo PAGE_DETAIL.'iletisim';?>"  id="menu-item-home" aria-haspopup="false" aria-expanded="false">İletişim</a>
+                                    
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+
+<!--
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -102,26 +207,7 @@
                 </a>
             </div>
         </div>
-        <!--<div class="item item mobile-search-box has-sub">
-            <a href="#">
-						<span class="icon">
-							<i class="fa fa-search" aria-hidden="true"></i>
-						</span>
-            </a>
-            <div class="block-sub">
-                <a href="#" class="close">
-                    <i class="fa fa-times" aria-hidden="true"></i>
-                </a>
-                <div class="header-searchform-box">
-                    <form class="header-searchform">
-                        <div class="searchform-wrap">
-                            <input type="text" class="search-input" placeholder="Enter keywords to search...">
-                            <input type="submit" class="submit button" value="Search">
-                        </div>
-                    </form>
-                </div>
-            </div>
-        </div>-->
+        
         <div class="item menu-bar">
             <a class=" mobile-navigation  menu-toggle" href="#">
                 <span></span>
@@ -131,3 +217,4 @@
         </div>
     </div>
 </div>
+-->

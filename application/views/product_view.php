@@ -20,12 +20,12 @@
         font-weight:bold
     }
 </style>
-<div class="product_div">
+<div class="product_div" style="background:#FFFFFF; padding-bottom:130px;">
     <div class="container">
         <div class="breadcrumb">
             <a href="<?php echo $_ENV['BASE_URL'];?>">Anasayfa</a> > <a href="<?php echo PRODUCT_LIST;?>">Ürünler</a> > <?php echo $product['product_name_en'];?>
         </div>
-        <div class="product_details">
+        <div class="product_details" >
             <div class="product_img">
                 <img src="<?php echo $_ENV['BASE_URL'];?>admin/files/product/img/400/<?php echo $product['product_image'];?>" alt="img">
             </div>

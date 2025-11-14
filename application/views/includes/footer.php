@@ -74,7 +74,7 @@
 <a href="#" class="backtotop">
     <i class="fa fa-angle-double-up"></i>
 </a>
-<script src="<?php echo $_ENV['BASE_URL'];?>assets/js/jquery-1.12.4.min.js"></script>
+<!--<script src="<?php echo $_ENV['BASE_URL'];?>assets/js/jquery-1.12.4.min.js"></script>
 <script src="<?php echo $_ENV['BASE_URL'];?>assets/js/jquery.plugin-countdown.min.js"></script>
 <script src="<?php echo $_ENV['BASE_URL'];?>assets/js/jquery-countdown.min.js"></script>
 <script src="<?php echo $_ENV['BASE_URL'];?>assets/js/bootstrap.min.js"></script>
@@ -92,7 +92,29 @@
 <script src="<?php echo $_ENV['BASE_URL'];?>assets/js/lightbox.min.js"></script>
 <script src="<?php echo $_ENV['BASE_URL'];?>assets/js/owl.thumbs.min.js"></script>
 <script src="<?php echo $_ENV['BASE_URL'];?>assets/js/jquery.scrollbar.min.js"></script>
-<script src="<?php echo $_ENV['BASE_URL'];?>assets/js/frontend-plugin.js"></script>
+<script src="<?php echo $_ENV['BASE_URL'];?>assets/js/frontend-plugin.js"></script>-->
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+
+
+<script src="<?php echo $_ENV['BASE_URL'];?>assets/vendors/bootstrap/js/bootstrap.bundle.js"></script>
+<script src="<?php echo $_ENV['BASE_URL'];?>assets/vendors/clipboard/clipboard.min.js"></script>
+<script src="<?php echo $_ENV['BASE_URL'];?>assets/vendors/vanilla-lazyload/lazyload.min.js"></script>
+<script src="<?php echo $_ENV['BASE_URL'];?>assets/vendors/waypoints/jquery.waypoints.min.js"></script>
+<script src="<?php echo $_ENV['BASE_URL'];?>assets/vendors/lightgallery/lightgallery.min.js"></script>
+<script src="<?php echo $_ENV['BASE_URL'];?>assets/vendors/lightgallery/plugins/zoom/lg-zoom.min.js"></script>
+<script src="<?php echo $_ENV['BASE_URL'];?>assets/vendors/lightgallery/plugins/thumbnail/lg-thumbnail.min.js"></script>
+<script src="<?php echo $_ENV['BASE_URL'];?>assets/vendors/lightgallery/plugins/video/lg-video.min.js"></script>
+<script src="<?php echo $_ENV['BASE_URL'];?>assets/vendors/lightgallery/plugins/vimeoThumbnail/lg-vimeo-thumbnail.min.js"></script>
+<script src="<?php echo $_ENV['BASE_URL'];?>assets/vendors/isotope/isotope.pkgd.min.js"></script>
+<script src="<?php echo $_ENV['BASE_URL'];?>assets/vendors/slick/slick.min.js"></script>
+<script src="<?php echo $_ENV['BASE_URL'];?>assets/vendors/gsap/gsap.min.js"></script>
+<script src="<?php echo $_ENV['BASE_URL'];?>assets/vendors/gsap/ScrollToPlugin.min.js"></script>
+<script src="<?php echo $_ENV['BASE_URL'];?>assets/vendors/gsap/ScrollTrigger.min.js"></script>
+<script src="<?php echo $_ENV['BASE_URL'];?>assets/vendors/mapbox-gl/mapbox-gl.js"></script>
+<script src="<?php echo $_ENV['BASE_URL'];?>assets/js/theme.min.js"></script> 
 </body>
 
 </html>
