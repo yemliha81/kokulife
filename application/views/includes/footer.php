@@ -114,7 +114,6 @@
 <script src="<?php echo $_ENV['BASE_URL'];?>assets/vendors/gsap/ScrollToPlugin.min.js"></script>
 <script src="<?php echo $_ENV['BASE_URL'];?>assets/vendors/gsap/ScrollTrigger.min.js"></script>
 <script src="<?php echo $_ENV['BASE_URL'];?>assets/vendors/mapbox-gl/mapbox-gl.js"></script>
-<script src="<?php echo $_ENV['BASE_URL'];?>assets/js/theme.min.js"></script> 
 </body>
 
 </html>
