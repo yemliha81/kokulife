@@ -130,6 +130,7 @@ class Product extends CI_Controller {
 	public function update_product_post()
 	{
 	    require DOC_ROOT . 'simpleImage/SimpleImage.php';
+		debug(DOC_ROOT . 'simpleImage/SimpleImage.php');
 		$post = $this->input->post();
 		//debug($post);
 		
