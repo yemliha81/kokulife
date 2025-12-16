@@ -6,6 +6,7 @@
             content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
         <title>Kokulife</title>
+        <meta name="description" content="DİREKT ÜRETİCİDEN BAMBU KOKU VE KOKUYA DAİR HER ŞEY.">
         <link rel="shortcut icon" type="image/x-icon" href="<?php echo $_ENV['BASE_URL'];?>assets/images/kokulife-favicon.png"/>
     <link href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&amp;display=swap"
           rel="stylesheet">
