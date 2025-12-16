@@ -211,6 +211,8 @@
         autoplay: true,
         arrows: false,
         speed: 2000,
+        slidesToShow: 4,
+        slidesToScroll: 1,
       });
     });
 </script>
