@@ -5,7 +5,7 @@
             <?php foreach($banners as $banner){ ?>
                 <div>
                     <a href="<?php echo $banner['url'];?>">
-                        <img src="<?php echo $_ENV['BASE_URL'];?>admin/files/banner/img/1000/<?php echo $banner['banner_image'];?>" width="100%" />
+                        <img src="<?php echo $_ENV['BASE_URL'];?>admin/files/banner/img/1000/<?php echo $banner['banner_image'];?>" height="350" />
                     </a>
                 </div>
             <?php } ?>
